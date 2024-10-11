@@ -4,101 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BooTunes</title>
-    <link rel="stylesheet" href="styles.css">
-<style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1530092285049-1c42085fd395');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: #fff;
+        }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-image: url('https://images.unsplash.com/photo-1508893699734-17e5a6b586af');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: -1;
+        }
 
-header {
-    margin-bottom: 50px;
-}
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
 
-header h1 {
-    font-size: 3rem;
-    color: #FFD700;
-}
+        header h1 {
+            font-size: 4rem;
+            color: #ffde59;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
 
-header p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    color: #FFFAFA;
-}
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            color: #ffdfba;
+        }
 
-section {
-    margin: 20px 0;
-}
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+            text-align: center;
+        }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #FFA500;
-}
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffde59;
+            border-bottom: 2px solid #ffde59;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
 
-ul {
-    list-style: none;
-    font-size: 1.2rem;
-}
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #f0e6d6;
+        }
 
-ul li {
-    margin: 10px 0;
-    color: #F0E68C;
-}
+        ul {
+            list-style: none;
+            padding: 0;
+        }
 
-footer {
-    margin-top: 50px;
-    font-size: 1rem;
-    color: #DCDCDC;
-}
+        ul li {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: #ffdfba;
+        }
 
-</style>
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px 0;
+            color: #f0e6d6;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
 </head>
 <body>
+    <div class="overlay"></div>
     <header>
-        <h1>BooTunes</h1>
-        <p>Music that matches the mood of the book you're reading.</p>
+        <div class="container">
+            <h1>BooTunes</h1>
+            <p>The perfect harmony between books and music.</p>
+        </div>
     </header>
 
-    <section class="team">
-        <h2>Project Members</h2>
-        <ul>
-            <li>Melih Aydın</li>
-            <li>Mehlika Eroğlu</li>
-            <li>Batuhan Dalkılıç</li>
-            <li>Elif Alptekin</li>
-            <li>Mehlika Eroğlu</li>
-        </ul>
-    </section>
+    <main>
+        <section class="about">
+            <div class="container">
+                <h2>About the Project</h2>
+                <p>BooTunes is an AI-powered application that matches music to the mood of the book you are reading. Whether it's a thrilling adventure or a peaceful reflection, BooTunes will provide the perfect soundtrack.</p>
+            </div>
+        </section>
 
-    <section class="supervisor">
-        <h2>Supervisor</h2>
-        <p>Venera Adanova</p>
-    </section>
+        <section class="team">
+            <div class="container">
+                <h2>Project Members</h2>
+                <ul>
+                    <li>Melih Aydın</li>
+                    <li>Mehlika Eroğlu</li>
+                    <li>Batuhan Dalkılıç</li>
+                    <li>Elif Alptekin</li>
+                    <li>Mehlika Eroğlu</li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="juries">
-        <h2>Juries</h2>
-        <ul>
-            <li>Eren Ulu</li>
-            <li>Gökçe Nur Yılmaz</li>
-            <li>Fırat Akba</li>
-        </ul>
-    </section>
+        <section class="supervisor">
+            <div class="container">
+                <h2>Supervisor</h2>
+                <p>Venera Adanova</p>
+            </div>
+        </section>
+
+        <section class="juries">
+            <div class="container">
+                <h2>Juries</h2>
+                <ul>
+                    <li>Eren Ulu</li>
+                    <li>Gökçe Nur Yılmaz</li>
+                    <li>Fırat Akba</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2024 BooTunes - All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 BooTunes - Music in sync with your story.</p>
+        </div>
     </footer>
 </body>
 </html>
